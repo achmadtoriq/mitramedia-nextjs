@@ -11,13 +11,30 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="m-auto text-center w-full">
-        {/* <Image src={"/assets/images/mitramedia.svg"} alt="Picture of the author" width={100} height={100} className="w-full"/> */}
+        <div className="justify-center items-center flex">
+          <Image
+            src={"/assets/images/mitramedia.webp"}
+            alt="Logo Mitramedia Advertising"
+            width={200}
+            height={24}
+            priority={true}
+            className="aspect-auto block dark:hidden"
+            quality={100}
+          />
+          <Image
+            src={"/assets/images/mitramedia2.webp"}
+            alt="Logo Mitramedia Advertising"
+            width={200}
+            height={24}
+            priority={true}
+            className="aspect-auto hidden dark:block"
+            quality={100}
+          />
+        </div>
 
-        <div className="m-auto bg-logo_corp dark:bg-logo_corp_dark w-[21%] h-[80px] bg-no-repeat"></div>
-
-        <p className="text-lg mt-8">Halaman tidak di temukan</p>
+        <p className="text-sm mt-2">Halaman tidak di temukan</p>
         <Link href={"/"}>
-          <p className="text-blue-500 cursor-pointer hover:underline mt-4">
+          <p className="text-blue-500 text-sm cursor-pointer hover:underline mt-2">
             Kembali ke halaman utama &gt;&gt;
           </p>
         </Link>
