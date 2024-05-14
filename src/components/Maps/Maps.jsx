@@ -13,7 +13,6 @@ export function ChangeView({ coords }) {
 }
 
 const Maps = ({ position, zoom }) => {
-  console.log(position, zoom);
   return (
     <>
       <MapContainer
