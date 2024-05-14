@@ -3,7 +3,7 @@ export default function sitemap() {
       {
         url: 'https://acme.com',
         lastModified: new Date(),
-        changeFrequency: 'yearly',
+        changeFrequency: 'daily',
         priority: 1,
       },
       {

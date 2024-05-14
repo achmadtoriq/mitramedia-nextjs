@@ -46,7 +46,6 @@ const Menu = ({ state }) => {
         key={index}
       >
         <Link
-          key={index}
           className={`${item.className} text-sm font-semibold rounded-full tracking-normal ${ pathname === item.path ? "bg-red-500 text-white" : ` ${ state ? "text-red-500" : "text-white" } `}`}
           href={item.path}
         >

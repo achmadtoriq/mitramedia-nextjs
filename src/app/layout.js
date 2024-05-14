@@ -20,8 +20,9 @@ export default function RootLayout({ children }) {
           {children}
           <section
             id="footer-section"
-            className="bg-black text-white px-20 py-10"
+            className="bg-border_footer text-white px-20 py-10"
           >
+            
             <Footer />
           </section>
         </ThemeProvider>

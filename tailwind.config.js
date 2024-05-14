@@ -74,7 +74,9 @@ module.exports = {
       backgroundImage: {
         banner: 'url(/assets/images/banner/bill1.webp)',
         logo_corp: 'url(/assets/images/mitramedia.webp)',
-        logo_corp_dark: 'url(/assets/images/mitramedia2.webp)'
+        logo_corp_dark: 'url(/assets/images/mitramedia2.webp)',
+        border_footer: 'url(/subtle-prism.svg)',
+        id_maps: 'url(/id.svg)',
       }
     },
   },

@@ -1,0 +1,77 @@
+[
+    {
+        "path": "logo-acer.webp",
+        "altName": "Branding Acer",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-aga.webp",
+        "altName": "Branding Cat AGA",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-akr.webp",
+        "altName": "Branding AKR",
+        "id_tipe": 2
+    },
+    {
+        "path": "logo-asus.webp",
+        "altName": "Branding Asus",
+        "id_tipe": 3
+    },
+    {
+        "path": "logo-bankjatim.webp",
+        "altName": "Branding Bank Jatim",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-bosch.webp",
+        "altName": "Branding Bosch",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-hock.webp",
+        "altName": "Branding Hock",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-hp.webp",
+        "altName": "Branding HP",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-jnt.webp",
+        "altName": "Branding Ekspedisi J&T Express",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-oppo.webp",
+        "altName": "Branding Oppo",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-paragon.webp",
+        "altName": "Branding Cat Paragon",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-sharp.webp",
+        "altName": "Branding Elektronik Sharp",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-shunda.webp",
+        "altName": "Branding Paralon Shunda",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-ubs.webp",
+        "altName": "Branding Emas UBS",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-vivo.webp",
+        "altName": "Branding Vivo",
+        "id_tipe": 1
+    }
+]

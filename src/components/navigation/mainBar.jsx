@@ -19,9 +19,9 @@ const MainBar = () => {
       <header className={`fixed top-0 w-full shadow-sm p-3 z-20 ${
           scrollY > 100 ? "lg:bg-white" : "bg-opacity-75"
         }`}>
-        <div className="absolute top-0 right-0 m-2">
+        {/* <div className="absolute top-0 right-0 m-2">
           <ModeToggle className="rounded-full" />
-        </div>
+        </div> */}
         <div className="container">
           <div className="mx-auto my-2 flex justify-between items-center px-20">
             <div className="w-[70%]">

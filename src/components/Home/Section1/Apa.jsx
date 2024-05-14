@@ -1,5 +1,5 @@
 import React from "react";
-import data from "@/../public/assets/data/apa.json";
+import data from "@/data/apa.json";
 import Image from 'next/image'
 
 const Apa = () => {
