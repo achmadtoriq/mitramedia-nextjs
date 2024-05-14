@@ -13,14 +13,13 @@ export async function POST(request) {
     auth: {
         user: process.env.GMAIL_USER,
         pass: process.env.GMAIL_PASS
-    },
-    from: '"Your Name" <no-reply@example.com>'
+    }
   });
 
   try {
     // Send mail with defined transport object
     await transporter.sendMail({
-      from: '"Your Name" <no-reply@example.com>',
+      from: 'Your Name',
       to: process.env.GMAIL_FROM,
       subject: subject,
       text: message,
