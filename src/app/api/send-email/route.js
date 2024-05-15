@@ -19,7 +19,7 @@ export async function POST(request) {
   try {
     // Send mail with defined transport object
     await transporter.sendMail({
-      from: 'Your Name',
+      from: `"Alfin Faiz" <${email}>`,
       to: process.env.GMAIL_FROM,
       subject: subject,
       text: message,
