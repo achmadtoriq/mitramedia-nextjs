@@ -39,9 +39,9 @@ const ProjectList = () => {
 
   return (
     <>
-      <div className="container pt-10 px-20">
+      <div className="lg:container px-5 lg:pt-10 lg:px-20">
         <div className="w-full px-2 py-16 sm:px-0">
-          <Tab.Group className="w-[75%] mx-auto py-10">
+          <Tab.Group className="hidden lg:block w-[75%] mx-auto py-10">
             <Tab.List className="flex justify-center space-x-1 rounded-full border border-red-600 bg-white/5 p-1">
               {tabGallery.map((value, idx) => (
                 <Tab
@@ -64,7 +64,7 @@ const ProjectList = () => {
               ))}
             </Tab.List>
           </Tab.Group>
-          <div className="grid grid-cols-4 gap-2 min-h-screen">
+          <div className="grid grid-cols-3 lg:grid-cols-4 gap-2">
             {DataImg.map((val, idx) => (
               <div
                 key={idx}
@@ -77,7 +77,7 @@ const ProjectList = () => {
                   height={24}
                   priority={true}
                   alt="Logo Mitramedia Advertising"
-                  className="aspect-auto rounded-lg"
+                  className="aspect-auto rounded-sm lg:rounded-lg"
                   quality={100}
                 />
               </div>
