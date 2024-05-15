@@ -2,27 +2,28 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(request) {
-  const { email, subject, message } = await request.json();
+  const { nama, email, subject, message } = await request.json();
 
   // Create a transporter object using SMTP transport
   const transporter = nodemailer.createTransport({
-    //service: "gmail",
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    service: "gmail",
     auth: {
         user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS
-    }
+        pass: process.env.GMAIL_PASS,
+      // user: 'ahfan2016@gmail.com',
+      // pass: 'yciiobvkpiegupsr',
+
+      // qqlnxzgkirfxdvkd -> afandi.achmadtoriq@gmail.com
+    },
   });
 
   try {
     // Send mail with defined transport object
     await transporter.sendMail({
-      from: `"Alfin Faiz" <${email}>`,
-      to: process.env.GMAIL_FROM,
+      sender: `"${nama} - ${email}" <${email}>`,
+      to: 'thoriqahmad17@gmail.com',
       subject: subject,
-      text: message,
+      text: `Email from: ${email} \n Message: ${message}`,
     });
 
     return NextResponse.json({ message: "Email sent successfully" }, { status: 200 });

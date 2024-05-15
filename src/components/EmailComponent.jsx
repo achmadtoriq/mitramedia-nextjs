@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 const EmailComponent = () => {
   const [email, setEmail] = useState('');
+  const [nama, setNama] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
@@ -16,7 +17,7 @@ const EmailComponent = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email, subject, message }),
+      body: JSON.stringify({ nama, email, subject, message }),
     });
 
     const data = await res.json();
@@ -29,6 +30,7 @@ const EmailComponent = () => {
     setEmail('');
     setSubject('');
     setMessage('');
+    setNama('');
     setTimeout(() => {
       setStatus('');
     }, 5000);
@@ -39,7 +41,30 @@ const EmailComponent = () => {
     <div className="text-left px-7 py-4 shadow-lg rounded-lg border">
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-1">
-          <div className="sm:col-span-4">
+        <div className="sm:col-span-4">
+            <label
+              htmlFor="nama"
+              className="block text-sm font-medium leading-6 text-gray-900"
+            >
+              Masukkan Nama Anda
+            </label>
+            <div className="mt-2">
+              <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                <input
+                  type="nama"
+                  name="nama"
+                  id="nama"
+                  autoComplete="off"
+                  className="block w-full flex-1 border-0 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  placeholder="Masukkan Nama Anda"
+                  onChange={(e) => setNama(e.target.value)}
+                  value={nama}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="sm:col-span-4 mt-4">
             <label
               htmlFor="email"
               className="block text-sm font-medium leading-6 text-gray-900"
@@ -62,7 +87,7 @@ const EmailComponent = () => {
             </div>
           </div>
 
-          <div className="sm:col-span-4">
+          <div className="sm:col-span-4 mt-4">
             <label
               htmlFor="subject"
               className="block text-sm font-medium leading-6 text-gray-900"
@@ -85,7 +110,7 @@ const EmailComponent = () => {
             </div>
           </div>
 
-          <div className="col-span-full mt-2">
+          <div className="col-span-full mt-4">
             <label
               htmlFor="content"
               className="block text-sm font-medium leading-6 text-gray-900"
