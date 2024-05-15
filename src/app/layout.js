@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           {children}
           <section
             id="footer-section"
-            className="bg-border_footer text-white px-20 py-10"
+            className="bg-border_footer text-white px-10 py-5 lg:px-20 lg:pb-10"
           >
             
             <Footer />

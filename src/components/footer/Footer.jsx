@@ -13,9 +13,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="container m-auto">
-        <div className="flex justify-between">
-          <div className="flex flex-col items-center w-[25%]">
+      <div className="lg:container m-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 justify-between">
+          <div className="flex flex-col items-center mt-5 lg:mt-10">
             <Image
               src={`/assets/images/mitramedia2.webp`}
               alt="Logo Mitramedia Advertising"
@@ -28,7 +28,7 @@ const Footer = () => {
               Your Trust Ads Partner
             </h1>
           </div>
-          <div className="flex flex-col overflow-hidden w-[27%]">
+          <div className="flex flex-col overflow-hidden mt-5 lg:mt-10">
             <h1 className="text-xl font-semibold">Product & Services</h1>
             <div className="flex flex-col my-2">
               <p className="text-xs font-medium">
@@ -74,7 +74,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-[23%]">
+          <div className="flex flex-col mt-5 lg:mt-10">
             <h1 className="text-xl font-semibold">Find us on</h1>
             <div className="flex flex-row items-center gap-5 text-5xl my-2">
               <Link href={"#"}>
@@ -88,7 +88,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col w-[25%]">
+          <div className="flex flex-col mt-5 lg:mt-10">
             <h1 className="text-xl font-semibold">Head Office</h1>
             <p className="my-2">
               Nginden Semolo 38-40, The Mezzanine A15 Kel. Nginden Jangkungan,
