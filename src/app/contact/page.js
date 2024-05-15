@@ -11,9 +11,9 @@ export const metadata = {
 
 const page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="container px-24 py-10">
-        <div className="flex flex-row justify-between gap-4">
+    <main className="gird min-h-screen grid-cols-1 items-center justify-between md:p-12 lg:p-24">
+      <div className="lg:container px-8 py-16 lg:px-24 lg:py-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 justify-between gap-4">
           <div className="w-full">
             <p className="lg:text-justify mb-3">
               Untuk pertanyaan atau permintaan dapat dilakukan dengan
@@ -45,7 +45,7 @@ const page = () => {
                 <LocationMaps />
             </div>
           </div>
-          <div className="w-full text-center">
+          <div className="w-full text-center order-first lg:order-last">
             <p className="">
               Dapatkan Penawaran Terbaik Melalui Nomor dibawah Ini
             </p>
