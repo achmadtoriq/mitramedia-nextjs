@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import MainBar from "@/components/navigation/mainBar";
 import Footer from "@/components/footer/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
           >
             
             <Footer />
+            <SpeedInsights />
           </section>
         </ThemeProvider>
       </body>
