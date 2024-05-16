@@ -10,10 +10,22 @@ const Partner = () => {
     {
       loop: true,
       mode: "free",      
-      slides: {
-        perView: 5,
-        spacing: 15,
+      // slides: {
+      //   perView: 5,
+      //   spacing: 15,
+      // },
+      breakpoints: {
+        '(min-width: 320px)': {
+          slides: { perView: 2, spacing: 15 },
+        },
+        '(min-width: 768px)': {
+          slides: { perView: 2, spacing: 10 },
+        },
+        '(min-width: 1200px)': {
+          slides: { perView: 3, spacing: 15 },
+        },
       },
+      slides: { perView: 1, spacing: 5 }, // Default settings
     },
     [
       (slider) => {
@@ -48,7 +60,7 @@ const Partner = () => {
   );
 
   return (
-    <div className="container mx-auto">
+    <div className="lg:container mx-auto">
       <h1 className="text-center text-2xl lg:text-4xl uppercase font-semibold lg:py-6">
         <span className="font-extrabold text-red-600">Clients</span> Kami
       </h1>

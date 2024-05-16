@@ -19,16 +19,16 @@ const page = () => {
       <section id="apa-section" className="bg-[#DDDDDD] text-black px-5 py-5 lg:px-20 lg:py-10">
         <Apa />
       </section>
-      <section id="indonesia-maps" className="py-2">
-        <div className="container bg-id_maps bg-no-repeat w-full bg-right h-96">
-          <div className="px-20 flex flex-col justify-center items-start h-full">
-            <h1 className="text-2xl lg:text-5xl capitalize font-bold lg:py-6 w-[45%] tracking-wide">
+      <section id="indonesia-maps" className="py-1 lg:py-2">
+        <div className="lg:container bg-id_maps bg-no-repeat lg:w-full bg-cover lg:bg-right h-36 lg:h-96">
+          <div className="px-5 lg:px-20 flex flex-col justify-center items-start h-full">
+            <h1 className="text-base lg:text-5xl capitalize font-bold lg:py-6 w-3/4 lg:w-[45%] tracking-wide">
               Banyak Project yang sudah kami kerjakan di seluruh wilayah Indonesia
             </h1>
           </div>
         </div>
       </section>
-      <section id="apa-section" className="bg-[#DDDDDD] text-black px-20 py-10">
+      <section id="apa-section" className="bg-[#DDDDDD] text-black px-10 py-5 lg:px-20 lg:py-10">
         <Partner />
       </section>
     </>
