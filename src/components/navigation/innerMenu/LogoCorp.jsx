@@ -12,7 +12,7 @@ const LogoCorp = ({ state }) => {
         height={24}
         priority={true}
         alt="Logo Mitramedia Advertising"
-        className="aspect-auto hidden lg:block mx-auto"
+        className="aspect-auto hidden lg:block"
         quality={100}
       />
 

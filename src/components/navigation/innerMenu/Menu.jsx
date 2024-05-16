@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -41,17 +41,16 @@ const Menu = ({ state }) => {
 
   return menuName.map((item, index) => (
     <>
-      <div
-        className={`${item.width}`}
-        key={index}
+      <Link key={index}
+        className={`text-sm py-2 font-semibold rounded-full tracking-normal ${
+          pathname === item.path
+            ? "bg-red-500 text-white"
+            : ` ${state ? "text-red-500" : "text-white"} `
+        }`}
+        href={item.path}
       >
-        <Link
-          className={`${item.className} text-sm font-semibold rounded-full tracking-normal ${ pathname === item.path ? "bg-red-500 text-white" : ` ${ state ? "text-red-500" : "text-white" } `}`}
-          href={item.path}
-        >
-          {item.name}
-        </Link>
-      </div>
+        {item.name}
+      </Link>
     </>
   ));
 };
