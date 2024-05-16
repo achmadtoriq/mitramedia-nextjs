@@ -16,7 +16,7 @@ const page = () => {
         <div className="z-10 mt-24"></div>
         <InformAds />
       </main>
-      <section id="apa-section" className="bg-[#DDDDDD] text-black px-20 py-10">
+      <section id="apa-section" className="bg-[#DDDDDD] text-black px-5 py-5 lg:px-20 lg:py-10">
         <Apa />
       </section>
       <section id="indonesia-maps" className="py-2">
