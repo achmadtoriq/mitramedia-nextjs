@@ -22,10 +22,10 @@ const Partner = () => {
           slides: { perView: 2, spacing: 10 },
         },
         '(min-width: 1200px)': {
-          slides: { perView: 3, spacing: 15 },
+          slides: { perView: 5, spacing: 5 },
         },
       },
-      slides: { perView: 1, spacing: 5 }, // Default settings
+      slides: { perView: 2, spacing: 5 }, // Default settings
     },
     [
       (slider) => {
