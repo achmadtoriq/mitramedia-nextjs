@@ -2,7 +2,7 @@ import React from "react";
 
 const InformAds = () => {
   return (
-    <div className="z-10 bg-black w-screen">
+    <div className="z-10 bg-black w-full">
       <div className="lg:container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 bottom-0 justify-center items-center py-4 text-white lg:px-32">
           <div className="px-4 lg:px-8">
