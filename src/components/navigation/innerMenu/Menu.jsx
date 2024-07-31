@@ -23,12 +23,6 @@ const menuName = [
     width: "",
   },
   {
-    name: "Location Billboard",
-    path: "/location",
-    className: "py-3 px-3",
-    width: "",
-  },
-  {
     name: "Contact",
     path: "/contact",
     className: "py-3 px-9",
